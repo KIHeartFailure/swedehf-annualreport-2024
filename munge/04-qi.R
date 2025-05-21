@@ -146,7 +146,7 @@ qiinfo <- qiinfo %>%
       qivar == "qi_crt" ~ "CRT",
       qivar == "qi_icd" ~ "ICD",
       qivar == "qi_fys" ~ "Physical exercise",
-      qivar == "qi_followreg3m" ~ "3-month follow-up"
+      qivar == "qi_followreg3m" ~ "Follow-up performed"
     ),
     qishortname_sv = case_when(
       qivar == "qi_lvef" ~ "LVEF",
@@ -166,7 +166,7 @@ qiinfo <- qiinfo %>%
       qivar == "qi_crt" ~ "CRT",
       qivar == "qi_icd" ~ "ICD",
       qivar == "qi_fys" ~ "Fysisk träning",
-      qivar == "qi_followreg3m" ~ "Uppföljning 3 månader"
+      qivar == "qi_followreg3m" ~ "Uppföljningsbesök"
     ),
     qiname = case_when(
       qivar == "qi_lvef" ~ "documentation of LVEF at index",
@@ -186,7 +186,7 @@ qiinfo <- qiinfo %>%
       qivar == "qi_crt" ~ "CRT implanted in patients with LVEF <36/40%, LBBB and QRS >130ms",
       qivar == "qi_icd" ~ "ICD implanted in patients with LVEF <36/40%",
       qivar == "qi_fys" ~ "participation in physical exercise for HF",
-      qivar == "qi_followreg3m" ~ "follow-up visit at 3 months performed and documented"
+      qivar == "qi_followreg3m" ~ "follow-up visit performed and documented"
     ),
     ll = case_when(
       qivar == "qi_lvef" ~ 0.8,
